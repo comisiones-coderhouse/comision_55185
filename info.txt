@@ -1,0 +1,37 @@
+Librerias de maquetacion :
+
+- tailwindcss
+
+- bootstrap / react-bootstrap / reactsrap
+- ant design
+- material ui
+
+
+Reglas de los componentes : 
+
+1- Todos son funciones
+2- Todos arrancan en mayuscula
+3- Todos tienen un return
+4- Todos tienen un solo elemento de retorno
+5- Todos los componentes tienen la capacidad de recibir props
+6- Todos los componentes tienen la capacidad de tener un estado
+
+
+
+
+
+function Contador (props) {
+  const saludar = () => {
+    console.log('Adentro de contador')
+  }
+
+  return (
+    <div>
+      <h3>Contador</h3>
+      {/* <button id='btn' onClick={() => { console.log('Hola ') }}>click</button> */}
+      <button onClick={saludar}>click</button>
+      {/* <button onClick={props.saludar}>componente padre</button> */}
+    </div>
+  )
+}
+export default Contador
