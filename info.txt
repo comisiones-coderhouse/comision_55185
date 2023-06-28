@@ -35,3 +35,13 @@ function Contador (props) {
   )
 }
 export default Contador
+
+
+HOOKS : Son funciones diversas que le dan "funcionalidades" nuevas a un componente. Todos los hooks arrancan con la palabra "use" y siempre se usan dentro de un componente pero nunca dentro de un condicional o un ciclo.
+
+- useState : 1 param (valor inicial | any ) - Retorna : 2 elementos (valor, funcion)
+- useRef : 1 param (valor inicial | null) - Retorna : 1 elemento (valor)
+- useEffect : 2 param
+- useContext : 1 param
+- useReducer : 2 param
+....
