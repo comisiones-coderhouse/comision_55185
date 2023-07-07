@@ -163,6 +163,11 @@ producto = {
 
 
 
+
+CONCEPTOS CLAVE : 
+
+
+
 - componentes 1
 
   function Foo(){
@@ -227,6 +232,83 @@ producto = {
 
   }
 
+  function Presentational(Props){
+    return (<div>)
+  }
+
   
 
 - Promises 6
+
+const promesa = new Promise((res,rej)=>{ 
+  //res("Hola")
+  rej("Error de rechazo")
+ })
+
+promesa
+.then((resultado)=>{ console.log(resultado) })
+.catch((error)=>{ console.log(error) })
+.finally(()=>{ console.log("Soy el finally") })
+
+
+
+
+
+
+
+
+
+
+
+
+HTTP/S
+
+Promise : son objetos que vienen con metodos para saber cuando algo termino de ejecutarse o no.
+
+
+
+async function getProductos (){
+  try {
+    const productos = await fetch()
+    console.log(productos)
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+getProductos()
+
+
+
+
+console.log(productos) //Promise{}
+
+
+
+
+
+
+const cache = caches.open()
+
+cache
+.then((resultado)=>{})
+.catch((error)=>{})
+.finally(()=>{})
+
+
+console.log(cache)//Promise{}
+
+
+
+
+
+const promesa = new Promise((res,rej)=>{ 
+
+  //res("Hola")
+  rej("Error de rechazo")
+ })
+
+promesa
+.then((resultado)=>{ console.log(resultado) })
+.catch((error)=>{ console.log(error) })
+.finally(()=>{ console.log("Soy el finally") })

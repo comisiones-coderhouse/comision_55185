@@ -1,21 +1,33 @@
-import ItemCount from "./ItemCount"
+import { useEffect, useState } from "react"
+import productosJson from "../productos.json"
+import Loader from "./Loader"
 import ItemList from "./ItemList"
+
 
 function ItemListContainer(props) {
 
-    let productos = [{ id: 1, nombre: "Producto 1" }, { id: 2, nombre: "Producto 2" }]
 
-    const onAdd = () => { 
-        console.log("Soy on Add!")
-    }
+    const [productos, setProductos] = useState([])
+    const [loading, setLoading] = useState(true)
 
-    return (
-        <div>
-            <h2>{props.greeting}</h2>
-            <ItemCount initial={1} stock={5} onAdd={onAdd} />
+
+    useEffect(() => {
+        setTimeout(() => {
+            setProductos(productosJson)
+            setLoading(false)
+        }, 5000)
+    }, [])
+
+
+    if (loading) {
+        return (
+            <Loader/>
+        )
+    } else {
+        return (
             <ItemList productos={productos}/>
-        </div>
-    )
+        )
+    }
 }
 
 export default ItemListContainer
