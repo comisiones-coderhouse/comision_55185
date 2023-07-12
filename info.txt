@@ -312,3 +312,7 @@ promesa
 .then((resultado)=>{ console.log(resultado) })
 .catch((error)=>{ console.log(error) })
 .finally(()=>{ console.log("Soy el finally") })
+
+
+
+SPA : Single Page Aplication

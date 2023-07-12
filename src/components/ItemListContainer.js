@@ -4,8 +4,7 @@ import Loader from "./Loader"
 import ItemList from "./ItemList"
 
 
-function ItemListContainer(props) {
-
+function ItemListContainer() {
 
     const [productos, setProductos] = useState([])
     const [loading, setLoading] = useState(true)
