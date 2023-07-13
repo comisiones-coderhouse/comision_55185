@@ -9,21 +9,26 @@ import Categorias from './components/pages/Categorias'
 function App() {
 
   return (
-    <BrowserRouter>
-      <NavBar />
-      <main className='p-4 grow'>
+    <>
+      <BrowserRouter>
+        <NavBar />
+        <main className='p-4 grow'>
 
-        <Routes>
-          <Route path='/' element={<Home/>} />
-          <Route path='/productos' element={<Productos/>} />
-          <Route path="/categoria/:id" element={<Categorias/>}  />
-        </Routes>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/productos' element={<Productos />} />
+            <Route path="/categoria/:id" element={<Categorias />} />
+            <Route path="/carrito" element={<p>carrito</p>} />
+            <Route path="*" element={<p>404</p>} />
+          </Routes>
 
-      </main>
+        </main>
+      </BrowserRouter>
+
       <footer className='bg-blue-800 text-white'>
         <p>Footer</p>
       </footer>
-    </BrowserRouter>
+    </>
   )
 }
 

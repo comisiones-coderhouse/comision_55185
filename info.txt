@@ -316,3 +316,80 @@ promesa
 
 
 SPA : Single Page Aplication
+
+
+
+
+SEGUNDA PRE ENTREGA : 
+
+
+(Implementacion vieja)
+index.js : arranque de la app
+- App.js : componente principal
+- NavBar : la barra de navegacion superior
+- CartWidget : el icono del carrito
+- ItemListContainer : el que consigue la info de los productos (recibia un prop greeting y lo mostraba en pantalla)
+
+
+- ItemListContainer : deja de recibir el prop y genera su propia informacion  (estado y efectos)
+- ItemList : Es un iterador de array. presentacional asi que recibe props
+- Item : Es un item de la lista. presentacional asi que recibe props
+
+
+let productos =  []
+
+fetch()
+.then((resultado)=>{ productos = resultado })
+
+productos.map(producto=>{})
+
+
+- ItemDetailContainer : no recibe props y genera su propia informacion  (estado y efectos)
+- ItemDetail : Muestra el detalle de un producto solo. presentacional asi que recibe props
+
+let producto =  {}
+
+fetch()
+.then((resultado)=>{ producto = resultado })
+
+producto.price
+
+- ItemCount
+
+
+
+DE LA LIBRERIA : 
+
+- BrowserRouter : envuelve toda la app
+- Routes : Obligatorio porque sino fallan las rutas
+- Route : 
+
+    - path : "/" - muestra todos los productos de todas las cateogiras sin filtrar el array de productos (ItemListContainer)
+    - path : "/category/:id" - muesta todos los productos de una categoria sola filtrando el array de productos (ItemListContainer)
+    - path : "/item/:id" - muestra el detalle de un producto solo (ItemDetailContainer)
+
+
+- Link/NavLink : reemplaza al <a> para que no recargue la pagina
+
+    - uno en el brand (en el titulo del header/navbar) que apunte al home "/"
+    - uno en cada producto en pantalla (osea en Item.js) que apunte al detalle de ese producto "/item/:id"
+    - uno en cada categoria en pantalla (osea en navbar.js) que apunte a esa categoria  "/category/:id"
+
+  
+Plantilla de Promise
+
+Esto es el ejemplo de como crear una promesa a mano para simular un pedido a una API (Mock Async)
+
+
+const promesa = new Promise((res,rej)=>{ 
+
+  //hacer resolver la promesa despues de 2 segundos
+  //res(arrayProdIniciales)
+
+ })
+
+
+ .then((respuestaApi)=>{
+  //console.log(respuestaApi)
+ })
+ .catch(()=>{})
