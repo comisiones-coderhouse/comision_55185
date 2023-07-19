@@ -10,9 +10,7 @@ function NavBar() {
         <NavLink to="/productos">productos</NavLink>
         <NavLink to="/categoria/pantalones">pantalones</NavLink>
         <NavLink to="/categoria/remeras">remeras</NavLink>
-        <NavLink to="/carrito">
-          <CartWidget />
-        </NavLink>
+        <CartWidget />
       </nav>
     </header>
   )
