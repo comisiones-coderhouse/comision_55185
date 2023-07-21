@@ -397,3 +397,35 @@ const promesa = new Promise((res,rej)=>{
 
 
  State Uplifting 
+
+1 - Crear un estado en el componente padre (podria ser el contexto tambien a gran escala*)
+2 - Crear una funcion que modifique ese estado en el componente padre (*)
+3 - Pasar esa funcion y/o estado como prop/contexto al componente hijo
+4 - Ejecutar esa funcion en el componente hijo mediante un evento cualquiera 
+5 - A la funcion del paso 4 se le pueden pasar parametros, osea variables que podrian estar en el hijo
+6 - Se reciben esos parametros finalmente en la funcion original del paso 2
+
+
+Patron Provider
+
+
+1 - Creo un contexto con createContext()
+2 - Le saco de adentro el Provider
+3 - Creo un componente mio que tenga adentro el Provider del paso 2 (de esta manera, mi componente va a ser el responsable del contexto y no se lo delego al resto de la app)
+4 - El componente del paso 3 tiene que recibir props, sobre todo uno llamado children que lo va a mostrar en su vista
+5 - Dentro del Provider del paso 2, le configuro un prop llamado value que le asigna el valor al contexto (osea las "variables globales")
+6 - Envuelvo el resto de la app dentro del componente que hice en el paso 3
+
+
+
+Como Leer un Contexto desde un componente cualquiera
+
+1 - Importo el contexto
+2 - Importo el hook useContext
+3 - Uso el contexto de paso 1 como parametro del hook useContext, eso me da el valor del contexto actualizado
+
+
+
+
+
+HoC : High Order Component

@@ -1,6 +1,7 @@
 import { useState } from "react"
 
 function Hijo(props) {
+
   const [contador,setContador] = useState(0)
 
   const handleClick = () => {

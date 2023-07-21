@@ -3,14 +3,13 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './components/pages/Home'
 import Productos from './components/pages/Productos'
 import Categorias from './components/pages/Categorias'
-import MiCustomProvider from './components/miContexto'
-
+import CartProvider from './components/CartProvider'
 
 function App() {
 
   return (
     <>
-      <MiCustomProvider>
+      <CartProvider>
         <BrowserRouter>
           <NavBar />
           <main className='p-4 grow'>
@@ -26,7 +25,7 @@ function App() {
         <footer className='bg-blue-800 text-white'>
           <p>Footer</p>
         </footer>
-      </MiCustomProvider>
+      </CartProvider>
     </>
   )
 }
