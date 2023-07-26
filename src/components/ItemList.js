@@ -5,7 +5,7 @@ function ItemList(props) {
     return (
         <section>
             {props.productos.map(producto => {
-                return <Item key={producto.id} />
+                return <Item key={producto.id} producto={producto} />
             })}
         </section>
     )

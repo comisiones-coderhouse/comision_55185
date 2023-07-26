@@ -429,3 +429,24 @@ Como Leer un Contexto desde un componente cualquiera
 
 
 HoC : High Order Component
+
+
+
+
+
+CRUD / ABM  :  Create Read Update Delete / Alta Baja Modificacion
+
+
+BASES DE DATOS RELACIONALES(SQL) / NO RELACIONALES(NotOnlySQL)
+
+- SQL : MySQL, MariaDB, PostgreSQL, Oracle, SQL Server
+- NoSQL : MongoDB , Cassandra , CouchDB , Redis , Firebase  
+
+
+
+Dinamica de consultas : 
+
+1 - te conectas al servidor :  initializeApp / app
+2 - estableces sobre que base de datos vas a trabajar : getFirestore / db
+3 - estableces sobre que coleccion/es vas a trabajar : collection 
+4 - haces la consulta : getDocs / getDoc / addDoc / updateDoc / deleteDoc

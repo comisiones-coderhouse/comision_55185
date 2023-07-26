@@ -1,21 +1,12 @@
-import { useState } from "react"
-import Hijo from "./Hijo"
+import { Link } from "react-router-dom"
 
 function Home() {
-
-  const [nombre,setNombre] = useState("horacio")
-
-  const handleClick = (nuevoNombre) => {
-    setNombre(nuevoNombre)
-  }
 
   return (
     <div>
       <h2>Home</h2>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium veritatis ex fuga ipsum, sed optio!</p>
-      <Hijo 
-        nombre={nombre} 
-        onAdd={handleClick} />
+      <p>Bienvenido a mi E-Comerce!</p>
+      <Link to='/productos'>Vea nuestros productos!</Link>
     </div>
   )
 }
