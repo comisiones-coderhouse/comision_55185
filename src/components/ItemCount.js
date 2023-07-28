@@ -18,11 +18,13 @@ function ItemCount(props) {
     }
 
     return (
-        <div>
+        <div className="mt-4">
             <p>Contador : {count}</p>
-            <button onClick={handleSumar}>+</button>
-            <button onClick={handleConfirmar}>confirmar cantidad</button>
-            <button onClick={handleRestar}>-</button>
+            <div className="flex gap-4 mt-4">
+                <button className="rounded p-2 bg-blue-300 shadow-xl" onClick={handleSumar}>+</button>
+                <button className="rounded p-2 bg-blue-300 shadow-xl" onClick={handleConfirmar}>confirmar cantidad</button>
+                <button className="rounded p-2 bg-blue-300 shadow-xl" onClick={handleRestar}>-</button>
+            </div>
         </div>
     )
 }

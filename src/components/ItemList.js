@@ -3,7 +3,7 @@ import Item from "./Item"
 function ItemList(props) {
 
     return (
-        <section>
+        <section className="flex flex-col gap-8">
             {props.productos.map(producto => {
                 return <Item key={producto.id} producto={producto} />
             })}

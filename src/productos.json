@@ -12,6 +12,7 @@
     {
         "id": 3,
         "title": "Producto 3",
-        "description": "Descripcion 3"
+        "description": "Descripcion 3",
+        "image" : "/img/imagen.jpg"
     }
 ]

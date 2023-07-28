@@ -1,5 +1,3 @@
-//npm install firebase
-//firebase/app - firebase/auth - firebase/firestore - firebase/storage
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
