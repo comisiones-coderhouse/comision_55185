@@ -13,7 +13,6 @@ function ItemCount(props) {
     }
 
     const handleConfirmar = () => {
-        //alert(`se agregaron ${count} productos al carrito`)
         props.onAdd()
     }
 

@@ -474,3 +474,10 @@ Dinamica de consultas :
             console.log("Algo salio mal!")
             console.log(error)
         })
+
+
+
+BUILD & DEPLOY
+
+Build : Compilacion final antes de subir los archivos al servidor web
+Deploy : Subir los archivos al servidor web
