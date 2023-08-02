@@ -481,3 +481,26 @@ BUILD & DEPLOY
 
 Build : Compilacion final antes de subir los archivos al servidor web
 Deploy : Subir los archivos al servidor web
+
+
+
+
+ERRORES COMUNES EN LA ENTREGA : 
+
+1 - Comentarios y console.logs
+2 - Componentes* , variables , archivos innecesarios
+3 - Librerias instaladas que no usaron
+4 - * Fragmentos 
+5 - Los componentes que se mencionan en el slide* se tienen que respetar en nombre y ubicacion : 
+
+  - App.js
+  - NavBar.js
+  - CartWidget.js
+  - ItemListContainer.js
+  - ItemList.js
+  - Item.js
+  - ItemDetailContainer.js
+  - ItemDetail.js
+  - ItemCount.js
+  - Cart.js
+  - CartProvider.js

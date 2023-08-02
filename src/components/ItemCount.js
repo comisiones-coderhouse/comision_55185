@@ -1,8 +1,11 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { toast } from "react-toastify"
+import { cartContext } from "./CustomProvider"
 
 function ItemCount(props) {
 
     const [count, setCount] = useState(0)
+    const valorDelContexto = useContext(cartContext)
 
     const handleSumar = () => {
         setCount(count + 1)
@@ -13,7 +16,8 @@ function ItemCount(props) {
     }
 
     const handleConfirmar = () => {
-        props.onAdd()
+        valorDelContexto.agregarAlCarrito(count)
+        toast.info("Producto agregado al carrito")
     }
 
     return (

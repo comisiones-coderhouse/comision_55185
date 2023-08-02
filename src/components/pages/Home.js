@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom"
+import ItemListContainer from "../ItemListContainer"
 
 function Home() {
 
   return (
     <div>
-      <h2>Home</h2>
-      <p>Bienvenido a mi E-Comerce!</p>
-      <Link to='/productos'>Vea nuestros productos!</Link>
+      <h2 className="font-bold text-2xl">Home</h2>
+      <p className="mb-8">Bienvenido a mi E-Comerce!</p>
+      <ItemListContainer/>
     </div>
   )
 }
